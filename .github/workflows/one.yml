@@ -1,0 +1,10 @@
+on:
+  repository_dispatch:
+jobs:
+  quicken:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: benluddy/highlander-action@v1-staging
+      with:
+        github_token: ${{ github.token }}
+    - run: 'sleep 60'
