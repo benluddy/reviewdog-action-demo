@@ -7,7 +7,6 @@ jobs:
     - uses: benluddy/highlander-action@v1-staging
       with:
         github_token: ${{ github.token }}
-        repository_owner: ${{ github.repository_owner }}
         repository: ${{ github.repository }}
         workflow_name: ${{ github.workflow }}
         workflow_run_number: ${{ github.run_number }}
